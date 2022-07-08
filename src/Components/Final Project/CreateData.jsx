@@ -54,7 +54,6 @@ const CreateData = () => {
       else{
         try{
           const res = await axios.post('https://jsonplaceholder.typicode.com/users',dataSubmit);
-          console.log(res);
           if(res.status>200){
             toast.success('Data Submit Successfully');
           };
